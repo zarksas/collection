@@ -238,7 +238,22 @@ function getUsersGeo(array, id) {
 }
 
 function getUsersCompany(array, id) {
-   return array.find((item) => item.id === id)
+    array.find((item) => {
+      if (item.id === id) {
+        console.log(item.company) 
+      }
+    })
 }
 
- 
+
+ function changePhone(array, id, phone) {
+     return array.map((item) => {
+        if (item.id === id) {
+          item.phone = phone
+          
+        }
+        return item
+       
+      })
+ }
+
