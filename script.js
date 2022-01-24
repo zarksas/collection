@@ -226,4 +226,11 @@ const users = [
   
 }
 
+function deleteUser(array, id) {
+    return array.filter((item) => item.id !== id)
+
+  }
+    
+
+
  
