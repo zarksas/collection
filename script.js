@@ -231,6 +231,12 @@ function deleteUser(array, id) {
 
   }
     
+function getUsersGeo(array, id) {
+  let res = array.find((item) => item.id === id)
+    
+      return res.address.geo
+}
+
 
 
  
