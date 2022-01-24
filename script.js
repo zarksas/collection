@@ -203,7 +203,17 @@ const users = [
   ];
 
   function getAllNames(array) {
-      users.forEach((item) => console.log(item.name))
+      array.forEach((item) => console.log(item.name))
   }
 
-  
+  function getUserById(array, id) {
+      array.filter((item) => {
+          if (item.id === id) {
+              console.log(item)
+          }
+      })
+  }
+
+ 
+
+ 
