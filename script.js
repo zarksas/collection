@@ -237,6 +237,8 @@ function getUsersGeo(array, id) {
       return res.address.geo
 }
 
-
+function getUsersCompany(array, id) {
+   return array.find((item) => item.id === id)
+}
 
  
