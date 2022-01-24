@@ -214,6 +214,16 @@ const users = [
       })
   }
 
- 
+  function removeAddresses(array) {
+        array.map((item) => delete item.address)
+        console.log(array)
+      
+  }
+
+  function removeAddresses(array) {
+    array.map((item) => delete item.address)
+    console.log(array)
+  
+}
 
  
